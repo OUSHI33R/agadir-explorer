@@ -6,7 +6,9 @@ function TripData (props){
             <div className="t-img">
                 <img src={props.image} alt="image"/>
             </div>    
-            <h4>{props.heading}</h4>
+            <center>
+             <h4>{props.heading}</h4>
+            </center>
             <p>{props.text}</p>
         </div>   
     )
