@@ -8,6 +8,8 @@ import { BsFillBriefcaseFill } from "react-icons/bs";
 import { FaAddressBook } from "react-icons/fa";
 import {TbGridDots} from "react-icons/tb";
 import {FaTimes} from "react-icons/fa";
+
+
 import { MenuItems } from "./Menuitems";
 
 class Navbar extends Component {
@@ -25,7 +27,7 @@ class Navbar extends Component {
                 <div className="menu-icons" onClick={this.handelClick}>
                     <i className={this.state.clicked ? "fas fa-times" : "fas fa-bars" }></i>
                 </div>
-                <div>
+                <div className="nav">
                         <ul className={this.state.clicked ? "navbar-menu active" : "navbar-menu"}>
                             {MenuItems.map((item, index) => {
                                 return (
@@ -36,8 +38,8 @@ class Navbar extends Component {
                                     </li>
                                 )
                             })}
-                            <button>Sign Up</button>
                         </ul>
+                        <button>Sign Up</button>
                 </div>
             
             </nav>

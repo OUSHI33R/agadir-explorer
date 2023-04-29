@@ -2,6 +2,7 @@ import Destination from '../Component/Destination';
 import Hero from '../Component/Hero';
 import Navbar from '../Component/Navbar';
 import Trip from '../Component/Trip';
+import Footer from '../Component/Footer';
 function Home () {
 
     return (
@@ -14,11 +15,14 @@ function Home () {
             titel="Your Journey Your Story"
             text="Choose Your favourite Destination"
             buttonText ="Travel Plan"
-            url="/"
+            url="/travelplan"
             btnClass="show"
             />
             <Destination/>
             <Trip/>
+            <Footer/>
+
+
         </>
     )
 }
